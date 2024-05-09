@@ -72,4 +72,4 @@ I also followed the BEM methodology for the naming of my classes.
 1) clone the repo locally,
 2) `npm install`
 3) `npm run dev`
-4) Open your browser and navigate to [http://localhost:5173] (port might vary, previous command will output actual port).
+4) Open your browser and navigate to [http://localhost:5173](http://localhost:5173) (port might vary, previous command will output actual port).

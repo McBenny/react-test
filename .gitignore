@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+marvel-keys.md
 
 # Editor directories and files
 .vscode/*

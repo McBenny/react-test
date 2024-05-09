@@ -45,19 +45,20 @@ Happy coding!🚀
 
 ### Features
 Because I didn't understand the full logic of the initial requirements, I decided to implement the following features:
-- The user is presented with a list of comics tha tthey can choose from.
-- when a comic is selected, it's informations are displayed below: Cover image, title, description and list of characters.
+- The user is presented with a list of comics that they can choose from.
+- when a comic is selected, it's information are displayed below: Cover image, title, description and list of characters.
 - When a character is clicked, additional info is displayed about the character: image and name.
 - It is possible to hide the details of a character, display all of them, in any order.
 - Light effects are added to images (comic and characters), buttons have hover effects and are disabled when the character is visible.
-- A loading takes place before the list of comics is retrieved and while no comic is selected.
-- Design is responsive and adapt to the available space with one break point.
+- A loading takes place before the list of comics is retrieved and until no comic is selected.
+- Design is responsive and adapts to the available space with one break point.
 
 #### Missing features
 There is no zooming of panning in a dots cloud as there is no dots cloud, it didn't make sense as all the characters are always related to each other in the comic selected.  
 The main reason was "User must select a comic to show the graph" which tells me there can't be anything before any comic is selected, and once selected, we're limited to a few characters.
 
 Still I found a few libraries I would have tried/considered to use if I had to implement this feature:
+- Observable HQ (https://observablehq.com/@d3/force-directed-graph/2?intent=fork)
 - HighCharts (https://www.highcharts.com/demo/highcharts/network-graph),
 - FusionCharts (https://www.fusioncharts.com/charts/chord-diagram/chord-diagram-blend?framework=javascript)
 - eCharts (https://echarts.apache.org/examples/en/editor.html?c=graph-force-dynamic)
@@ -65,7 +66,8 @@ Still I found a few libraries I would have tried/considered to use if I had to i
 ### Coding-wise
 I used a React-Typescript-Vite boilerplate as a start, and only added Sass and Axios in terms of packages.
 
-I created a few components to organise the build, including a "Loading" one (only displaying a line of text) used with different parameters. 2 types are defined for characters and comics, I used the `useState` and `useContext` hooks for storing and passing through the data.  
+I created a few components to organise the build, including a "Loading" one (only displaying a line of text) used with different parameters. 2 types are defined for characters and comics, I used the `useState` and `useContext` hooks for storing and passing through the data.
+
 I also followed the BEM methodology for the naming of my classes.
 
 ## Installation / Running
